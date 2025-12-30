@@ -12,9 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav>
           <Link href="/"> Home </Link>
           {/* Prefetched when the link is hovered or enters the viewport */}
-          <Link href="/blog">  Experience </Link>
+          <Link href="/experience">  Experience </Link>
           {/* No prefetching */}
-          <a href="/contact"> Projects </a>
+          <Link href="/projects"> Projects </Link>
           <AboutMe />
         </nav>
         {/* server component wrapping children with context provider */}
